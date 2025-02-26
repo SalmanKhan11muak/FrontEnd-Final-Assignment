@@ -1,0 +1,555 @@
+.hide{
+    display: none;
+}
+/* ----------------------------------Nav-bar------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(227, 219, 219);
+  }
+  
+body {
+    min-height: 100vh;      /* Recomendent for every time for website */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  }
+
+ul img{
+    width: 13rem;
+    margin-top: -40px;
+    
+  }
+  
+  nav ul{
+     width: 100%;
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 200px;
+    
+  }
+  
+  
+  nav li{
+    height: 120px;
+    font-size:20px; 
+  }
+  
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;  
+      
+  }
+  
+  nav a:hover{
+    color: red;
+  }
+  
+
+  .navbar{
+    display: flex; 
+  }
+ 
+  
+  .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(152, 138, 138, 0.493);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  
+  .menu-button{
+    display: none;
+  } 
+
+  .resume{
+    width: 180px;
+    height: 50px;
+    background-color: aqua;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+ 
+
+
+/* --------------------------Main body 1 => info----------------------------------------------------  */
+
+.main-body-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    height: 700px;
+    align-items: center;
+}
+
+.left-body-text{
+    width: 700px;
+    height: 70%;
+    margin-left: 150px;
+}
+
+.left-body-text>h1{
+    color: aqua;
+    font-size: 60px;
+   
+}
+
+
+
+.left-body-text p{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.icon{
+     margin-right: 40px;
+     color: aqua;
+     font-size: 40px;
+}
+
+
+.main-body-info img{
+    width: 400px;
+    height: 600px;
+    margin-right: 150px;
+}
+
+/* --------------------------Main body 2 => Portfolio----------------------------------------------------  */
+.portfolio-header{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    height: 10rem;
+}
+
+.portfolio-section {
+    width: 100%;
+    height: 35rem;
+    margin-top: -10px; 
+    
+}
+
+.portfolio-section-1{
+    border: 2px solid rgb(166, 161, 161);
+    width: 80rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20rem;   
+}
+
+.carousel{
+    width: 30rem;  
+    height: 25rem;  
+}
+
+.portfolio-text{
+    width: 40rem; 
+    height: 25rem;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.portfolio-text span,i{
+    font-size: 40px;
+    color: aqua;
+    font-weight: bold;
+}
+.portfolio-text button{
+    background-color: rgba(177, 184, 213, 0.8);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+
+/* --------------------------Main body 3 => Qualification---------------------------------------------------- */
+.Qualification{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60rem;
+}
+
+.Work{
+    width: 30rem;
+    margin-left: 18rem;
+}
+
+.Work h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.Work div{
+    margin-left: 2rem;
+    margin-top: -2rem;
+    margin-bottom: 60px;   
+}
+
+.Work button {
+    background-color: rgba(97, 106, 143, 0.8);
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+/* --------------------------Main body 4 => My Education--------------------------------------------------- */
+.Education{
+
+    margin-top: 300px;    
+}
+.Education h1{
+    color: aqua;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.Education h2,h3{
+    margin-bottom: 5px;
+} 
+
+/* --------------------------Main body 4 => Contact--------------------------------------------------- */
+
+.Contact{
+     font-size: 60px;
+    text-align: center;
+    height: 55rem;
+}
+
+.Contact h1{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.contact-me{
+    width: 50%;
+    height: 600px;
+    margin-left: 25%;
+    border: 1px solid rgb(129, 118, 118);
+    box-shadow: 5px 5px 10px rgb(209, 223, 228);
+    
+}
+
+.contact-me input{
+    width: 50%;
+    height: 5rem;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 25%;
+    background-color: black;
+    border: 2px solid rgb(136, 130, 130);
+}
+
+.contact-me input::placeholder{
+    color: rgb(161, 157, 149);
+}
+
+.contact-me textarea{
+    width: 60%;
+    height: 10rem;
+    font-size: 30px;
+    margin-left: 20%;
+    background-color: black;
+    border: 2px solid rgb(136, 130, 130);
+}
+
+.contact-me button{
+    width: 40rem;
+    height: 80px; 
+    font-size: 20px; 
+    border: 2px solid rgb(136, 130, 130); 
+    background-color: rgb(75, 67, 67);
+    color: aqua;
+}
+
+/* --------------------------Footer--------------------------------------------------- */
+.footer{
+    font-size: 30px;
+    text-align: center; 
+    
+    padding: auto;
+}
+
+.footer i{
+    margin: 30px;
+}
+
+
+
+
+
+
+ 
+
+    /* -----------------------Responsive (Small Device)-------------------------------------------- */
+    
+    @media (max-width:400px){
+      .sidebar{
+        width: 100%; 
+      }
+    }
+    
+@media only screen and (min-width:400px) and (max-width: 767px) {
+    *{
+        background-color: black;
+    }
+ 
+    .hideOnMobile{
+      display: none;
+      }
+
+   .menu-button{
+        display: block;
+        background-color: white;
+        color: white;
+      }
+
+      ul img{
+        width: 10rem;
+        margin-top: -40px;
+        margin-left: -20px;
+        
+      }
+      
+
+/* --------------------------Main body 1 => info----------------------------------------------------  */
+
+.main-body-info{
+    flex-direction: column;
+    height: 90rem;
+    align-items: center; 
+}
+
+.left-body-text{
+    width: 70%;
+    height: 45%;
+    margin-left: 50px;    
+}
+
+.left-body-text button{
+    margin-top: 40px;
+}
+
+.main-body-info img{
+    margin-right: 20%;
+    background-color: black;
+    width: 100%;  
+    margin-top: -50rem;  
+}
+
+/* --------------------------Main body 2 => Portfolio----------------------------------------------------  */
+ 
+.portfolio-section {
+   align-items: center;
+   height: 60rem;
+   
+}
+
+.portfolio-section-1{
+    flex-direction: column; 
+    width: 95%; 
+    height: 55rem;
+    margin-left: 0rem; 
+}
+
+.portfolio-text{
+    width: 90%; 
+    height: 100%;
+    margin-left: 50px;
+    margin-top: 10px;
+     margin-bottom: 10px;
+}
+.carousel{
+    width: 90%;  
+    height: 25rem;  
+}
+
+/* --------------------------Main body 3 => Qualification-------------------------------------------------- */
+.Qualification{
+    flex-direction: column;
+    height: 100rem;
+}
+.Work{
+    margin-left: 1rem;
+    width: 25rem;
+}
+
+.Education{
+    margin-top: 0px;
+    text-align: center;    
+}
+
+/* --------------------------Main body 4 => Contact--------------------------------------------------- */
+
+.Contact h1{
+    font-size: 3rem;
+}
+
+.contact-me{
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;  
+}
+.contact-me input{
+    width: 80%;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.contact-me textarea{
+    width: 85%;
+    font-size: 30px;
+    margin-left: 3%;
+}
+
+.contact-me button{
+    width: 90%;
+    font-size: 20px;
+    margin-left: -5%; 
+
+}
+
+
+    }
+
+    
+/* -----------------------Responsive (Medium Device)--------------------------------------- */
+
+@media only screen and (min-width:768px) and (max-width: 992px){
+
+   nav ul{
+    height: 20rem;
+   }
+
+    ul img{
+        width: 10rem; 
+      }
+
+/* --------------------------Main body 1 => info----------------------------------------------------  */
+
+.main-body-info{
+    flex-direction: column;
+    height: 90rem;
+    align-items: center; 
+}
+
+.left-body-text{
+    width: 80%;
+    height: 45%;
+    margin-left: 50px;    
+}
+
+.main-body-info img{
+    margin-right: 20%;
+    background-color: black;
+    width: 100%;  
+    margin-top: -50rem;
+    width: 550px;
+    height: 750px;  
+}
+
+/* --------------------------Main body 2 => Portfolio----------------------------------------------------  */
+ 
+.portfolio-section {
+    align-items: center;
+    height: 60rem;
+    
+ }
+ 
+ .portfolio-section-1{
+     flex-direction: column-reverse; 
+     width: 90%; 
+     height: 55rem;
+     margin-left: 5%; 
+ }
+ 
+ .portfolio-text{
+     width: 90%; 
+     height: 100%;
+     margin-left: 50px;
+     margin-top: 10px;
+      margin-bottom: 10px;
+ }
+ .carousel{
+     width: 90%;  
+     height: 30rem;  
+ }
+
+ /* --------------------------Main body 3 => Qualification-------------------------------------------------- */
+.Qualification{
+    flex-direction: column;
+    height: 80rem;
+}
+.Work{
+    margin-left: 20%;
+}
+
+.Education{
+    margin-top: 0px;
+    text-align: center;    
+}
+
+/* --------------------------Main body 4 => Contact--------------------------------------------------- */
+
+.Contact h1{
+    font-size: 5rem;
+}
+
+.contact-me{
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;  
+}
+.contact-me input{
+    width: 80%;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.contact-me textarea{
+    width: 85%;
+    font-size: 30px;
+    margin-left: 3%;
+}
+
+.contact-me button{
+    width: 90%;
+    font-size: 20px;
+    margin-left: -5%; 
+
+}
+
+/* --------------------------Footer--------------------------------------------------- */
+.footer{
+    font-size: 30px;
+    text-align: center; 
+    padding: auto;
+    margin-top: -10rem;
+}
+
+}
